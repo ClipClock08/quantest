@@ -23,5 +23,5 @@
     $address_site = "http://confirm.email/";
 
     //Почтовый адрес администратора сайта
-    $email_admin = "clipclosk08@gmail.ru";
+    $email_admin = "clipclock08@gmail.com";
 ?>

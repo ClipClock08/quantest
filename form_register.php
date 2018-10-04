@@ -145,8 +145,8 @@
                     <fieldset>
                         <legend>Creating an <b>Employer</b> or <b>Agent</b> account</legend>
                         <br>
-                        <input type="radio" value="radioValue" name="userPro"> Employer <input type="radio"
-                                                                                               value="radioValue"
+                        <input type="radio" value="Employer" name="userPro"> Employer <input type="radio"
+                                                                                               value="Agent"
                                                                                                name="userPro">Agent<br>
                         <br>
                         <table border="0" cellpadding="0" cellspacing="2" whidt="600">

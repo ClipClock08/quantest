@@ -53,19 +53,53 @@ if (isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"]
     }
 
 
-
     if (isset($_POST["nomEntreprise"])) {
 
         //Обрезаем пробелы с начала и с конца строки
         $company_name = trim($_POST["nomEntreprise"]);
 
         if (!empty($company_name)) {
-            // Для безопасности, преобразуем специальные символы в HTML-сущности
-            $company_name = htmlspecialchars($company_name, ENT_QUOTES);
-        } else {
 
+
+            $company_name = htmlspecialchars($company_name, ENT_QUOTES);
+
+            //Проверяем, нет ли уже такого адреса в БД.
+            $result_query = $mysqli->query("SELECT `company_name` FROM `users` WHERE `company_name`='" . $company_name . "'");
+
+            //Если кол-во полученных строк ровно единице, значит, пользователь с таким почтовым адресом уже зарегистрирован
+            if ($result_query->num_rows == 1) {
+
+                //Если полученный результат не равен false
+                if (($row = $result_query->fetch_assoc()) != false) {
+
+                    // Сохраняем в сессию сообщение об ошибке.
+                    $_SESSION["error_messages"] .= "<p class='mesage_error' >Company name already exist</p>";
+
+                    //Возвращаем пользователя на страницу регистрации
+                    header("HTTP/1.1 301 Moved Permanently");
+                    header("Location: " . $address_site . "form_register.php");
+
+                } else {
+                    // Сохраняем в сессию сообщение об ошибке.
+                    $_SESSION["error_messages"] .= "<p class='mesage_error' >server error</p>";
+
+                    //Возвращаем пользователя на страницу регистрации
+                    header("HTTP/1.1 301 Moved Permanently");
+                    header("Location: " . $address_site . "form_register.php");
+                }
+
+                /* закрытие выборки */
+                $result_query->close();
+
+                //Останавливаем  скрипт
+                exit();
+            }
+
+            /* закрытие выборки */
+            $result_query->close();
+        } else {
             // Сохраняем в сессию сообщение об ошибке.
-            $_SESSION["error_messages"] .= "<p class='mesage_error' >Input company name</p>";
+            $_SESSION["error_messages"] .= "<p class='mesage_error' Name of your company</p>";
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
@@ -75,9 +109,7 @@ if (isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"]
             exit();
         }
 
-
     } else {
-
         // Сохраняем в сессию сообщение об ошибке.
         $_SESSION["error_messages"] .= "<p class='mesage_error' >Except name of company</p>";
 
@@ -88,6 +120,7 @@ if (isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"]
         //Останавливаем  скрипт
         exit();
     }
+
 
     if (isset($_POST["siteWeb"])) {
 
@@ -321,11 +354,11 @@ if (isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"]
     if (isset($_POST["telContact"])) {
 
         //Обрезаем пробелы с начала и с конца строки
-        $last_name = trim($_POST["telContact"]);
+        $phone = trim($_POST["telContact"]);
 
-        if (!empty($last_name)) {
+        if (!empty($phone)) {
             // Для безопасности, преобразуем специальные символы в HTML-сущности
-            $last_name = htmlspecialchars($last_name, ENT_QUOTES);
+            $phone = htmlspecialchars($phone, ENT_QUOTES);
         } else {
 
             // Сохраняем в сессию сообщение об ошибке.
@@ -416,15 +449,15 @@ if (isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"]
         exit();
     }
 
-
+    $date = date("M-d-Y", mktime(0, 0, 0, date('m'), date('d') - 1, date('Y')));
     //Удаляем пользователей из таблицы users, которые не подтвердили свою почту в течении сутки
-    $query_delete_users = $mysqli->query("DELETE FROM `users` WHERE `email_status` = 0 AND `date_registration` < ( NOW() - INTERVAL 1 DAY )");
+    $query_delete_users = $mysqli->query("DELETE FROM `users` WHERE `email_status` = 0 AND `data_registration` < 4 ");
     if (!$query_delete_users) {
-        exit("<p><strong>Ошибка!</strong> Сбой при удалении просроченного аккаунта. Код ошибки: " . $mysqli->errno . "</p>");
+        exit("<p><strong>Ошибка!</strong> Сбой при удалении просроченного аккаунта. Код ошибки: " . $mysqli->errno. "</p>");
     }
-
+    $dat = date("Y-m-d H:m:s");
     //Запрос на добавления пользователя в БД
-    $result_query_insert = $mysqli->query("INSERT INTO `users` (first_name, last_name, email, password, date_registration) VALUES ('" . $first_name . "', '" . $last_name . "', '" . $email . "', '" . $password . "', NOW())");
+    $result_query_insert = $mysqli->query("INSERT INTO `users` (type_account, company_name, website, first_name, last_name, your_functions, email, phone, password) VALUES ('" . $type_account . "', '" . $company_name . "', '" . $website . "', '" . $first_name . "', '" . $last_name . "', '" . $your_functions . "', '" . $email . "', '" . $phone . "', '" . $password . "')");
 
     if (!$result_query_insert) {
         // Сохраняем в сессию сообщение об ошибке.
@@ -437,18 +470,17 @@ if (isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"]
         //Останавливаем  скрипт
         exit();
     } else {
-
+        $date = date("M-d-Y", mktime(0, 0, 0, date('m'), date('d') - 1, date('Y')));
         //Удаляем пользователей из таблицы confirm_users, которые не подтвердили свою почту в течении сутки
-        $query_delete_confirm_users = $mysqli->query("DELETE FROM `confirm_users` WHERE `date_registration` < ( NOW() - INTERVAL 1 DAY)");
+        $query_delete_confirm_users = $mysqli->query("DELETE FROM `confirm_users` WHERE `data_registration` =  2");
         if (!$query_delete_confirm_users) {
             exit("<p><strong>Ошибка!</strong> Сбой при удалении просроченного аккаунта(confirm). Код ошибки: " . $mysqli->errno . "</p>");
         }
 
         //Составляем зашифрованный и уникальный token
         $token = md5($email . time());
-
         //Добавляем данные в таблицу confirm_users
-        $query_insert_confirm = $mysqli->query("INSERT INTO `confirm_users` (email, token, date_registration) VALUES ('" . $email . "', '" . $token . "', NOW()) ");
+        $query_insert_confirm = $mysqli->query("INSERT INTO `confirm_users` (email, token) VALUES ('" . $email . "', '" . $token . "') ");
 
         if (!$query_insert_confirm) {
             // Сохраняем в сессию сообщение об ошибке.
@@ -462,6 +494,16 @@ if (isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"]
             exit();
         } else {
 
+
+            // Сообщение
+            $message = "Line 1\r\nLine 2\r\nLine 3";
+
+            // На случай если какая-то строка письма длиннее 70 символов мы используем wordwrap()
+            $message = wordwrap($message, 70, "\r\n");
+
+            // Отправляем
+            mail('clipclock08@gmail.com', 'My Subject', $message);
+
             //Составляем заголовок письма
             $subject = "Подтверждение почты на сайте " . $_SERVER['HTTP_HOST'];
 
@@ -473,7 +515,12 @@ if (isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"]
 
             //Составляем дополнительные заголовки для почтового сервиса mail.ru
             //Переменная $email_admin, объявлена в файле dbconnect.php
-            $headers = "FROM: $email_admin\r\nReply-to: $email_admin\r\nContent-type: text/html; charset=utf-8\r\n";
+            //$headers = "FROM: $email_admin\r\nReply-to: $email_admin\r\nContent-type: text/html; charset=utf-8\r\n";
+            $headers = array(
+                'From' => 'clipclock08@gmail.com',
+                'Reply-To' => 'clipclock08@gmail.com',
+                'X-Mailer' => 'PHP/' . phpversion()
+            );
 
             //Отправляем сообщение с ссылкой для подтверждения регистрации на указанную почту и проверяем отправлена ли она успешно или нет.
             if (mail($email, $subject, $message, $headers)) {
@@ -485,14 +532,14 @@ if (isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"]
                 exit();
 
             } else {
-                $_SESSION["error_messages"] .= "<p class='mesage_error' >Ошибка при отправлении письма с сылкой подтверждения, на почту " . $email . " </p>";
+                $_SESSION["error_messages"] .= "<p class='mesage_error' >Ошибка при отправлении письма с сылкой подтверждения, на почту " . $email ." </p>";
             }
 
             // Завершение запроса добавления пользователя в таблицу users
-            $result_query_insert->close();
+            //$result_query_insert->close();
 
             // Завершение запроса добавления пользователя в таблицу confirm_users
-            $query_insert_confirm->close();
+            //$query_insert_confirm->close();
         }
     }
 
@@ -505,8 +552,7 @@ if (isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"]
 
     exit();
 
-}else{
+} else {
 
     exit("<p><strong>Ошибка!</strong> Вы зашли на эту страницу напрямую, поэтому нет данных для обработки. Вы можете перейти на <a href=" . $address_site . "> главную страницу </a>.</p>");
 }
-?>
