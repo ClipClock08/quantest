@@ -36,7 +36,7 @@ if(isset($_GET['email']) && !empty($_GET['email'])){
 
 //Удаляем пользователей с таблицы users, которые не подтвердили свою почту в течении сутки
 
-$query_delete_users = $mysqli->query("DELETE FROM `users` WHERE `email_status` = 0 AND `date_registration` < ( NOW() - INTERVAL 1 DAY )");
+$query_delete_users = $mysqli->query("DELETE FROM `users` WHERE `email_status` = 0 AND `data_registration` < 3");
 
 if(!$query_delete_users){
 
@@ -47,7 +47,7 @@ if(!$query_delete_users){
 
 //Удаляем пользователей из таблицы confirm_users, которые не подтвердили свою почту в течении сутки
 
-$query_delete_confirm_users = $mysqli->query("DELETE FROM `confirm_users` WHERE `date_registration` < ( NOW() - INTERVAL 1 DAY)");
+$query_delete_confirm_users = $mysqli->query("DELETE FROM `confirm_users` WHERE `data_registration` < 2");
 
 if(!$query_delete_confirm_users){
 
