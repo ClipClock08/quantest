@@ -105,14 +105,14 @@
             }
             
             //Удаляем пользователей с таблицы users, которые не подтвердили свою почту в течении сутки
-            $query_delete_users = $mysqli->query("DELETE FROM `users` WHERE `email_status` = 0 AND `data_registration` < 4");
+            $query_delete_users = $mysqli->query("DELETE FROM `users` WHERE `email_status` = 0 AND `date_registration` < ( NOW() - INTERVAL 1 DAY )");
             if(!$query_delete_users){
                 exit("<p><strong>Ошибка!</strong> Сбой при удалении просроченного аккаунта. Код ошибки: ".$mysqli->errno."</p>");
             }
 
 
             //Удаляем пользователей из таблицы confirm_users, которые не подтвердили свою почту в течении сутки
-            $query_delete_confirm_users = $mysqli->query("DELETE FROM `confirm_users` WHERE `data_registration` < 3");
+            $query_delete_confirm_users = $mysqli->query("DELETE FROM `confirm_users` WHERE `date_registration` < ( NOW() - INTERVAL 1 DAY )");
             if(!$query_delete_confirm_users){
                 exit("<p><strong>Ошибка!</strong> Сбой при удалении просроченного аккаунта(confirm). Код ошибки: ".$mysqli->errno."</p>");
             }
@@ -162,7 +162,7 @@
 
                             //Возвращаем пользователя на главную страницу
                             header("HTTP/1.1 301 Moved Permanently");
-                            header("Location: ".$address_site."index.php");
+                            header("Location: ".$address_site."welcome.php");
 
                             //Останавливаем скрипт
                             exit();

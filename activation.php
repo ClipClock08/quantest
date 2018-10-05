@@ -36,7 +36,7 @@ if(isset($_GET['email']) && !empty($_GET['email'])){
 
 //Удаляем пользователей с таблицы users, которые не подтвердили свою почту в течении сутки
 
-$query_delete_users = $mysqli->query("DELETE FROM `users` WHERE `email_status` = 0 AND `data_registration` < 3");
+$query_delete_users = $mysqli->query("DELETE FROM `users` WHERE `email_status` = 0 AND `date_registration` < ( NOW() - INTERVAL 1 DAY )");
 
 if(!$query_delete_users){
 
@@ -47,7 +47,7 @@ if(!$query_delete_users){
 
 //Удаляем пользователей из таблицы confirm_users, которые не подтвердили свою почту в течении сутки
 
-$query_delete_confirm_users = $mysqli->query("DELETE FROM `confirm_users` WHERE `data_registration` < 2");
+$query_delete_confirm_users = $mysqli->query("DELETE FROM `confirm_users` WHERE `date_registration` < ( NOW() - INTERVAL 1 DAY)");
 
 if(!$query_delete_confirm_users){
 
@@ -101,11 +101,11 @@ if(($row = $query_select_user->fetch_assoc()) != false){
                 }
 
                 // Завершение запроса удаления данных из таблицы confirm_users
-                $query_delete->close();
+                //$query_delete->close();
             }
 
             // Завершение запроса обновления статуса почтового адреса
-            $query_update_user->close();
+            //$query_update_user->close();
 
 
 

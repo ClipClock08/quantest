@@ -1,15 +1,12 @@
 <?php
 include ("header_q.php");
-//require_once("dbconnect.php");
-//if (isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"])) {
-//
-//
-//
-//
-//} else {
-//
-//    exit("<p><strong>Ошибка!</strong> Вы зашли на эту страницу напрямую, поэтому нет данных для обработки. Вы можете перейти на <a href=" . $address_site . "> главную страницу </a>.</p>");
-//}
+require_once("dbconnect.php");
+if(isset($_POST["btn_submit_auth"]) && !empty($_POST["btn_submit_auth"])){
+
+} else {
+
+    exit("<p><strong>Ошибка!</strong> Вы зашли на эту страницу напрямую, поэтому нет данных для обработки. Вы можете перейти на <a href=" . $address_site . "> главную страницу </a>.</p>");
+}
 ?>
 
 <div align="center">

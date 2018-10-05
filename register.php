@@ -449,13 +449,11 @@ if (isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"]
         exit();
     }
 
-    $date = date("M-d-Y", mktime(0, 0, 0, date('m'), date('d') - 1, date('Y')));
     //Удаляем пользователей из таблицы users, которые не подтвердили свою почту в течении сутки
-    $query_delete_users = $mysqli->query("DELETE FROM `users` WHERE `email_status` = 0 AND `data_registration` < 4 ");
+    $query_delete_users = $mysqli->query("DELETE FROM `users` WHERE `email_status` = 0 AND `date_registration` < (NOW() - INTERVAL 1 DAY)");
     if (!$query_delete_users) {
         exit("<p><strong>Ошибка!</strong> Сбой при удалении просроченного аккаунта. Код ошибки: " . $mysqli->errno. "</p>");
     }
-    $dat = date("Y-m-d H:m:s");
     //Запрос на добавления пользователя в БД
     $result_query_insert = $mysqli->query("INSERT INTO `users` (type_account, company_name, website, first_name, last_name, your_functions, email, phone, password) VALUES ('" . $type_account . "', '" . $company_name . "', '" . $website . "', '" . $first_name . "', '" . $last_name . "', '" . $your_functions . "', '" . $email . "', '" . $phone . "', '" . $password . "')");
 
@@ -470,9 +468,8 @@ if (isset($_POST["btn_submit_register"]) && !empty($_POST["btn_submit_register"]
         //Останавливаем  скрипт
         exit();
     } else {
-        $date = date("M-d-Y", mktime(0, 0, 0, date('m'), date('d') - 1, date('Y')));
         //Удаляем пользователей из таблицы confirm_users, которые не подтвердили свою почту в течении сутки
-        $query_delete_confirm_users = $mysqli->query("DELETE FROM `confirm_users` WHERE `data_registration` =  2");
+        $query_delete_confirm_users = $mysqli->query("DELETE FROM `confirm_users` WHERE `date_registration` < (NOW() - INTERVAL 1 DAY)");
         if (!$query_delete_confirm_users) {
             exit("<p><strong>Ошибка!</strong> Сбой при удалении просроченного аккаунта(confirm). Код ошибки: " . $mysqli->errno . "</p>");
         }
