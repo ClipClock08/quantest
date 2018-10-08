@@ -126,8 +126,6 @@
                 $_SESSION["error_messages"] .= "<p class='mesage_error' >Ошибка запроса на выборке пользователя из БД</p>";
                 
                 //Возвращаем пользователя на страницу регистрации
-                header("HTTP/1.1 301 Moved Permanently");
-                header("Location: ".$address_site."form_auth.php");
 
                 //Останавливаем скрипт
                 exit();
@@ -193,3 +191,4 @@
     else{
         exit("<p><strong>Ошибка!</strong> Вы зашли на эту страницу напрямую, поэтому нет данных для обработки. Вы можете перейти на <a href=".$address_site."> главную страницу </a>.</p>");
     }
+

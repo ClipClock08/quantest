@@ -15,6 +15,7 @@
         echo "<p><strong>Ошибка подключения к БД</strong>. Описание ошибки: ".mysqli_connect_error()."</p>";
         exit(); 
     }
+    session_start();
 
     // Устанавливаем кодировку подключения
     $mysqli->set_charset('utf8');

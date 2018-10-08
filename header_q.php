@@ -38,8 +38,10 @@
                                     <div align="left">
                                         <font size="-1"><b>Classics features:</b></font>
                                         <font color="black" size="-1">
-                                            <a href="registration.php">| Registration |</a>
-                                            <a href="login.php">Login</a> |</font></div>
+                                            <a href="form_register.php">| Registration |</a>
+                                            <a href="form_auth.php">Login</a> |</font></div>
+                                            <a href="exit.php">Logout</a> |</font></div>
+                                            <a href="profile.php">Profile</a> |</font></div>
                                 </td>
                             </tr>
                             <tr>
@@ -47,10 +49,10 @@
                                     <font size="-1"><b>Users forms</b>: |
                                         <a href="welcome.php">Welcome</a> |
                                         <a href="selection.php">Config mode</a> |
-                                        <a href="manualConfig.php">Manual config</a> |
-                                        <a href="expertConfig.php">Expert config</a> |
+                                        <a href="config/manual_config.php">Manual config</a> |
+                                        <a href="config/expert_config.php">Expert config</a> |
                                         <a href="reconversion.php">Reconversion</a> |
-                                        <a href="candidates.php">Candidates</a> |
+                                        <a href="config/candidates.php">Candidates</a> |
                                     </font>
                                 </td>
                             </tr>

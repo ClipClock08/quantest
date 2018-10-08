@@ -17,6 +17,7 @@ include ("header_q.php");
         <p>Choose your configuration mode</p>
         <button class="button" type="button" id="manual" onclick="manual()">Manual (semi-automatic)</button> or
         <button class="button button--inverted" type="button" id="expert" onclick="expert()">Expert System (recommended)</button>
+
     </div>
 
 

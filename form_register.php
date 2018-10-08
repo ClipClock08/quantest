@@ -141,7 +141,7 @@
             <div id="form_register">
                 <h2>Registering on the Quantest interface</h2>
 
-                <form action="register.php" method="post" name="form_register" >
+                <form action="welcome.php" method="post" name="form_register" >
                     <fieldset>
                         <legend>Creating an <b>Employer</b> or <b>Agent</b> account</legend>
                         <br>
@@ -173,7 +173,7 @@
                             </tr>
                             <tr>
                                 <td width="277">Your function*:</td>
-                                <td width="401"><input type="text" name="fonctionContact" size="50" required></td>
+                                <td width="401"><input type="text" name="fonctionContactionContact" size="50" required></td>
                             </tr>
                             <tr>
                                 <td width="277">Your email address*:</td>
