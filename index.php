@@ -1,7 +1,7 @@
 <?php 
 
     //Подключение шапки
-    require_once("header.php");
+    require_once("header_q.php");
 ?>
 
 <div id="content">

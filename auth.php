@@ -1,6 +1,4 @@
 <?php
-    //Запускаем сессию
-    session_start();
 
     //Добавляем файл подключения к БД
     require_once("dbconnect.php");

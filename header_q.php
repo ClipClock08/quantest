@@ -1,4 +1,5 @@
 <?php
+require_once ("dbconnect.php");
 /**
  * Created by PhpStorm.
  * User: alexdev
@@ -10,7 +11,9 @@
 <head>
     <title>quantest.loc</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/stylequan.css">
+    <link rel="stylesheet" type="text/css" href="css/starter.css">
     <script src="js/script.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
@@ -38,10 +41,23 @@
                                     <div align="left">
                                         <font size="-1"><b>Classics features:</b></font>
                                         <font color="black" size="-1">
-                                            <a href="form_register.php">| Registration |</a>
-                                            <a href="form_auth.php">Login</a> |</font></div>
-                                            <a href="exit.php">Logout</a> |</font></div>
-                                            <a href="profile.php">Profile</a> |</font></div>
+                                                <?php
+                                                //Проверяем, авторизован ли пользователь
+                                                if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){
+                                                    // если нет, то выводим блок со ссылками на страницу регистрации и авторизации
+                                                    ?>
+                                                        <a href="form_register.php">Registration</a>
+
+                                                        <a href="form_auth.php">Log in</a>
+                                                    <?php
+                                                }else{
+                                                    //Если пользователь авторизован, то выводим ссылку Выход
+                                                    ?>
+                                                        <a href="logout.php">Log out</a>
+                                                    <?php
+                                                }
+                                                ?>
+                                            <a href="profile.php">Profile</a>
                                 </td>
                             </tr>
                             <tr>
@@ -72,7 +88,9 @@
                                 </td>
                             </tr>
                         </table>
-                    </font></b></div>
+                    </font>
+                </b>
+            </div>
         </td>
     </tr>
 

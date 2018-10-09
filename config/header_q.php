@@ -38,8 +38,10 @@
                                     <div align="left">
                                         <font size="-1"><b>Classics features:</b></font>
                                         <font color="black" size="-1">
-                                            <a href="registration.php">| Registration |</a>
-                                            <a href="login.php">Login</a> |</font></div>
+                                            <a href="../form_register.php">| Registration |</a>
+                                            <a href="../form_auth.php">Login</a>
+                                            <a href="../logout.php">| Logout |</a>
+                                            <a href="../profile.php">Profile</a> |
                                 </td>
                             </tr>
                             <tr>
@@ -47,9 +49,9 @@
                                     <font size="-1"><b>Users forms</b>: |
                                         <a href="../welcome.php">Welcome</a> |
                                         <a href="selection.php">Config mode</a> |
-                                        <a href="manual_config.php.php">Manual config</a> |
-                                        <a href="expert_config.php.php">Expert config</a> |
-                                        <a href="reconversion.php">Reconversion</a> |
+                                        <a href="manual_config.php">Manual config</a> |
+                                        <a href="expert_config.php">Expert config</a> |
+                                        <a href="../reconversion.php">Reconversion</a> |
                                         <a href="candidates.php">Candidates</a> |
                                     </font>
                                 </td>
@@ -57,15 +59,15 @@
                             <tr>
                                 <td>
                                     <font size="-1"><b>Admin forms</b>: |
-                                        <a href="admin/adminSelection.php">Admin selection</a> |
-                                        <a href="admin/adminReconversion.php">Admin reconversion</a> |
+                                        <a href="../admin/admin_selection.php">Admin selection</a> |
+                                        <a href="../admin/admin_reconversion.php">Admin reconversion</a> |
                                     </font>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <font size="-1"><b>Individual sheet of the candidate</b>: |
-                                        <a href="admin/testResult.php">Test result form</a> |
+                                        <a href="../admin/test_result.php">Test result form</a> |
                                     </font>
                                 </td>
                             </tr>
