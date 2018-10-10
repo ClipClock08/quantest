@@ -68,7 +68,7 @@ require_once ("dbconnect.php");
                                         <a href="config/manual_config.php">Manual config</a> |
                                         <a href="config/expert_config.php">Expert config</a> |
                                         <a href="reconversion.php">Reconversion</a> |
-                                        <a href="config/candidates.php">Candidates</a> |
+                                        <a href="config/manual_config_db.php">Candidates</a> |
                                     </font>
                                 </td>
                             </tr>

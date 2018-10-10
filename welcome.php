@@ -13,7 +13,7 @@ else{
     $_SESSION['id'] = $id_user['id'];
 }
 
-print_r($_SESSION) ;
+//print_r($_SESSION) ;
 
 ?>
 

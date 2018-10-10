@@ -52,7 +52,7 @@
                                         <a href="manual_config.php">Manual config</a> |
                                         <a href="expert_config.php">Expert config</a> |
                                         <a href="../reconversion.php">Reconversion</a> |
-                                        <a href="candidates.php">Candidates</a> |
+                                        <a href="manual_config_db.php">Candidates</a> |
                                     </font>
                                 </td>
                             </tr>

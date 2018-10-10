@@ -89,36 +89,50 @@
 ?>
 
 <div id="form_auth">
-    <h2>Форма авторизации</h2>
-    <form action="auth.php" method="post" name="form_auth" >
-        <table>
-     
-            <tr>
-                <td> Email: </td>
-                <td>
-                    <input type="email" name="email" required="required" /><br />
-                    <span id="valid_email_message" class="mesage_error"></span>
-                </td>
-            </tr>
-     
-            <tr>
-                <td> Пароль: </td>
-                <td>
-                    <input type="password" name="password" placeholder="минимум 6 символов" required="required" /><br />
-                    <span id="valid_password_message" class="mesage_error"></span>
-                </td>
-            </tr>
-            
+    <h2>Connecting to the Quantest interface</h2>
+    Please login or <a href="form_register.php">register</a>
+    <form action="auth.php" method="post">
+        <table border="0" cellpadding="2" cellspacing="2" width="400">
             <tr>
                 <td>
-                    <input type="submit" name="btn_submit_auth" value="Войти" />
+                    <fieldset>
+                        <legend> To log in </legend><br>
+                        <table border="0" cellpadding="0" cellspacing="2" whidt="600">
+                            <tbody>
+                            <tr>
+                                <td valign="top" width="241">
+                                    <div align="left">
+                                        Username:</div>
+                                </td>
+                                <td width="342"><input type="text" name="email" placeholder="your email address.." size="24"></td>
+                            </tr>
+                            <tr>
+                                <td width="241">
+                                    <div align="left">
+                                        Password:</div>
+                                </td>
+                                <td width="342"><input type="password" name="password" size="24"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" width="241">
+                                    <p></p>
+                                    <p><input type="submit" name="submitButtonName" value="Log in"></p>
+                                    <p></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" colspan="2">
+                                    <p><a href="(Empty Reference!)"><font size="2">I forgot my password</font></a></p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </fieldset>
                 </td>
-                <!-- <td>
-                    <a href="#">Забыли пароль?</a>
-                </td> -->
             </tr>
         </table>
     </form>
+
 </div>
 <?php 
     }else{
