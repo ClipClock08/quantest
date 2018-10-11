@@ -2,12 +2,16 @@
 require_once ("../dbconnect.php");
 //Добавляем файл подключения к БД
 $user_id = $_SESSION['id'];
-$soc = $_POST['soc_env'];
-print_r($_POST);
-echo "<br>";
-echo "<br>";
-print_r($soc);
-//print_r($_SESSION);
+if(isset($_POST['soc_env']) && isset($_POST['technicite'])){
+    $soc = $_POST['soc_env'];
+    $social_environment = implode(",", $soc);
+
+    $dom_cap = $_POST['technicite'];
+    $dominant_capacity = implode(",", $dom_cap);
+}
+else{
+    $_SESSION["error_messages"] = "<p class='mesage_error' >Empty chek lists</p>";
+}
 //Объявляем ячейку для добавления ошибок, которые могут возникнуть при обработке формы.
 $_SESSION["error_messages"] = '';
 
@@ -17,7 +21,7 @@ $_SESSION["success_messages"] = '';
 /*
     Проверяем, была ли отправлена форма, то есть была ли нажата кнопка зарегистрироваться. Если да, то идём дальше, если нет, то выведем пользователю сообщение об ошибке, о том, что он зашёл на эту страницу напрямую.
 */
-if (isset($_POST["candidates1"]) && !empty($_POST["candidates"])) {
+if (isset($_POST["candidates"]) && !empty($_POST["candidates"])) {
 
     /* Проверяем, если в глобальном массиве $_POST существуют данные отправленные из формы и заключаем переданные данные в обычные переменные.*/
 
@@ -187,28 +191,9 @@ if (isset($_POST["candidates1"]) && !empty($_POST["candidates"])) {
     }
 
 
-    if (isset($_POST["soc_env"])) {
-        $social_environment = $_POST["soc_env"];
-        foreach ($social_environment as $key){
-            echo $key;
-        }
-        if (!empty($social_environment)) {
+    if (isset($social_environment) && !empty($social_environment)) {
             // Для безопасности, преобразуем специальные символы в HTML-сущности
             $social_environment = htmlspecialchars($social_environment, ENT_QUOTES);
-            $_SESSION["error_messages"] .= "<p class='mesage_error' >Chek Env Soc ".$social_environment."</p>";
-        } else {
-
-            // Сохраняем в сессию сообщение об ошибке.
-            $_SESSION["error_messages"] .= "<p class='mesage_error' >Except Env Soc ".$social_environment."</p>";
-
-            //Возвращаем пользователя на страницу регистрации
-            header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../config/manual_config.php");
-
-            //Останавливаем  скрипт
-            exit();
-        }
-
 
     } else {
 
@@ -314,32 +299,15 @@ if (isset($_POST["candidates1"]) && !empty($_POST["candidates"])) {
         exit();
     }
 
-    if (isset($_POST["technicite"])) {
 
-        //Обрезаем пробелы с начала и с конца строки
-        $dominant_capacity = $_POST["technicite"];
-
-        if (!empty($dominant_capacity)) {
-            // Для безопасности, преобразуем специальные символы в HTML-сущности
-            $dominant_capacity = htmlspecialchars($dominant_capacity, ENT_QUOTES);
-        } else {
-
-            // Сохраняем в сессию сообщение об ошибке.
-            $_SESSION["error_messages"] .= "<p class='mesage_error' >except domin</p>";
-
-            //Возвращаем пользователя на страницу регистрации
-            header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../config/manual_config.php");
-
-            //Останавливаем  скрипт
-            exit();
-        }
-
+    if (isset($dominant_capacity) && !empty($dominant_capacity)) {
+        // Для безопасности, преобразуем специальные символы в HTML-сущности
+        $dominant_capacity = htmlspecialchars($dominant_capacity, ENT_QUOTES);
 
     } else {
 
         // Сохраняем в сессию сообщение об ошибке.
-        $_SESSION["error_messages"] .= "<p class='mesage_error' >chek dominant</p>";
+        $_SESSION["error_messages"] .= "<p class='mesage_error' >Empty chek list 2</p>";
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");

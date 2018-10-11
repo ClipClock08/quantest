@@ -54,10 +54,11 @@ require_once ("dbconnect.php");
                                                     //Если пользователь авторизован, то выводим ссылку Выход
                                                     ?>
                                                         <a href="logout.php">Log out</a>
+                                                        <a href="profile.php">Profile</a>
                                                     <?php
                                                 }
                                                 ?>
-                                            <a href="profile.php">Profile</a>
+
                                 </td>
                             </tr>
                             <tr>
@@ -68,22 +69,22 @@ require_once ("dbconnect.php");
                                         <a href="config/manual_config.php">Manual config</a> |
                                         <a href="config/expert_config.php">Expert config</a> |
                                         <a href="reconversion.php">Reconversion</a> |
-                                        <a href="config/manual_config_db.php">Candidates</a> |
+                                        <a href="candidates_list.php">Candidates</a> |
                                     </font>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <font size="-1"><b>Admin forms</b>: |
-                                        <a href="admin/adminSelection.php">Admin selection</a> |
-                                        <a href="admin/adminReconversion.php">Admin reconversion</a> |
+                                        <a href="admin/admin_selection.php">Admin selection</a> |
+                                        <a href="admin/admin_reconversion.php">Admin reconversion</a> |
                                     </font>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <font size="-1"><b>Individual sheet of the candidate</b>: |
-                                        <a href="admin/testResult.php">Test result form</a> |
+                                        <a href="admin/test_result.php">Test result form</a> |
                                     </font>
                                 </td>
                             </tr>

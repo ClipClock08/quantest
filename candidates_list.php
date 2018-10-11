@@ -4,19 +4,31 @@ require_once("dbconnect.php");
 if(!isset($_SESSION["email"]) && empty($_SESSION["password"])){
     exit("<p><strong>Ошибка!</strong> Вы зашли на эту страницу напрямую, поэтому нет данных для обработки. Вы можете перейти на <a href=".$address_site."> главную страницу </a>.</p>");
 }
-else{
-
-    $email = $_SESSION["email"];
-    $password = $_SESSION["password"];
-    $user = $mysqli->query("SELECT `id` FROM `users` WHERE `email`='" . $email . "' AND `password`='" . $password . "'");
-    $id_user = mysqli_fetch_array($user);
-    $_SESSION['id'] = $id_user['id'];
-}
 
 //print_r($_SESSION) ;
 
 ?>
-<table border="0" cellpadding="5" cellspacing="2" width="943">
+    <div class="block_for_messages">
+        <?php
+        //Если в сессии существуют сообщения об ошибках, то выводим их
+        if(isset($_SESSION["error_messages"]) && !empty($_SESSION["error_messages"])){
+            echo $_SESSION["error_messages"];
+
+            //Уничтожаем ячейку error_messages, чтобы сообщения об ошибках не появились заново при обновлении страницы
+            unset($_SESSION["error_messages"]);
+        }
+
+        //Если в сессии существуют радостные сообщения, то выводим их
+        if(isset($_SESSION["success_messages"]) && !empty($_SESSION["success_messages"])){
+            echo $_SESSION["success_messages"];
+
+            //Уничтожаем ячейку success_messages,  чтобы сообщения не появились заново при обновлении страницы
+            unset($_SESSION["success_messages"]);
+        }
+        ?>
+    </div>
+
+<table border="0" cellpadding="5" cellspacing="2" width="943" align="center">
     <tr height="9">
         <td width="744" valign="top" align="left" height="9"></td>
         <td align="left" valign="top" width="16" height="9"></td>
@@ -34,9 +46,9 @@ else{
                 </tr>
                 <tr>
                     <td>
-                        <form name="FormName" action="login.php" method="post">
+                        <form name="candidates_list" action="candidates.php" method="post">
                             <div align="center">
-                                <table cellspacing="2" cellpadding="2" border="0" width="550" align="center">
+                                <table cellspacing="2" cellpadding="2" border="0" width="550" align="center" id="add_line">
                                     <tbody>
                                     <tr>
                                         <td></td>
@@ -61,108 +73,31 @@ else{
                                             <div align="center">
                                                 <font color="white">Born:</font></div>
                                         </td>
-                                        <td bgcolor="#006400" width="45">
+                                        <td bgcolor="#006400" width="100">
                                             <div align="center">
-                                                <font color="white">M/ F</font></div>
+                                                <font color="white">Male/ Female</font></div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td bgcolor="#ffffcc">1</td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="50"><input name="anniversaire" type="date"></td>
-                                        <td bgcolor="#ffffcc" width="45"><input type="text" name="textfieldName" size="8" width="20"></td>
+                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="family_name[0]" size="30"></td>
+                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="first_name[0]" size="30"></td>
+                                        <td bgcolor="#ffffcc" width="50"><input name="born_date[0]" type="date"></td>
+                                        <td bgcolor="#ffffcc" width="45">
+                                            <input type="radio" name="gender[0]" id="" value="M">M
+                                        <input type="radio" name="gender[0]" value="F">F</td>
                                     </tr>
-                                    <tr>
-                                        <td bgcolor="#efefbf">2</td>
-                                        <td bgcolor="#efefbf" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#efefbf" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="50"><input name="anniversaire" type="date"></td>
-                                        <td bgcolor="#efefbf" width="45"><input type="text" name="textfieldName" size="8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#ffffcc">3</td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="50"><input name="anniversaire" type="date"></td>
-                                        <td bgcolor="#ffffcc" width="45"><input type="text" name="textfieldName" size="8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#efefbf">4</td>
-                                        <td bgcolor="#efefbf" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#efefbf" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="50"><input name="anniversaire" type="date"></td>
-                                        <td bgcolor="#efefbf" width="45"><input type="text" name="textfieldName" size="8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#ffffcc">5</td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="50"><input name="anniversaire" type="date"></td>
-                                        <td bgcolor="#ffffcc" width="45"><input type="text" name="textfieldName" size="8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#efefbf">6</td>
-                                        <td bgcolor="#efefbf" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#efefbf" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="50"><input name="anniversaire" type="date"></td>
-                                        <td bgcolor="#efefbf" width="45"><input type="text" name="textfieldName" size="8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#ffffcc">7</td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="50"><input name="anniversaire" type="date"></td>
-                                        <td bgcolor="#ffffcc" width="45"><input type="text" name="textfieldName" size="8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#efefbf">8</td>
-                                        <td bgcolor="#efefbf" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#efefbf" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="50"><input name="anniversaire" type="date"></td>
-                                        <td bgcolor="#efefbf" width="45"><input type="text" name="textfieldName" size="8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#ffffcc">9</td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="50"><input name="anniversaire" type="date"></td>
-                                        <td bgcolor="#ffffcc" width="45"><input type="text" name="textfieldName" size="8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#efefbf">10</td>
-                                        <td bgcolor="#efefbf" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#efefbf" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="50"><input name="anniversaire" type="date"></td>
-                                        <td bgcolor="#efefbf" width="45"><input type="text" name="textfieldName" size="8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#ffffcc">11</td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="50"><input name="anniversaire" type="date"></td>
-                                        <td bgcolor="#ffffcc" width="45"><input type="text" name="textfieldName" size="8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td bgcolor="#efefbf">12</td>
-                                        <td bgcolor="#efefbf" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#efefbf" width="222"><input type="text" name="textfieldName" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="50"><input name="anniversaire" type="date"></td>
-                                        <td bgcolor="#efefbf" width="45"><input type="text" name="textfieldName" size="8"></td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="5">
-                                            <div align="left">
-                                                <font color="red"><a href="(Empty Reference!)">Add lines..</a> </font><br>
-                                                <br>
-                                                <input type="submit" name="submitButtonName" value="Save"><br>
-                                                <br>
-                                            </div>
-                                        </td>
-                                    </tr>
+
+
                                     </tbody>
                                 </table>
                             </div>
+                        <div align="left">
+                            <input type="button" type="button" onclick="add_candidat_line();" value="Добавить элемент">
+                            <br>
+                            <input type="submit" name="add_candidates" value="Save"><br>
+                            <br>
+                        </div>
                         </form>
                     </td>
                 </tr>

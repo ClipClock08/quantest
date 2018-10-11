@@ -38,21 +38,35 @@
                                     <div align="left">
                                         <font size="-1"><b>Classics features:</b></font>
                                         <font color="black" size="-1">
-                                            <a href="../form_register.php">| Registration |</a>
-                                            <a href="../form_auth.php">Login</a>
-                                            <a href="../logout.php">| Logout |</a>
-                                            <a href="../profile.php">Profile</a> |
+                                            <?php
+                                            //Проверяем, авторизован ли пользователь
+                                            if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){
+                                                // если нет, то выводим блок со ссылками на страницу регистрации и авторизации
+                                                ?>
+                                                <a href="form_register.php">Registration</a>
+
+                                                <a href="form_auth.php">Log in</a>
+                                                <?php
+                                            }else{
+                                                //Если пользователь авторизован, то выводим ссылку Выход
+                                                ?>
+                                                <a href="logout.php">Log out</a>
+                                                <a href="profile.php">Profile</a>
+                                                <?php
+                                            }
+                                            ?>
+
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <font size="-1"><b>Users forms</b>: |
                                         <a href="../welcome.php">Welcome</a> |
-                                        <a href="selection.php">Config mode</a> |
+                                        <a href="../selection.php">Config mode</a> |
                                         <a href="manual_config.php">Manual config</a> |
                                         <a href="expert_config.php">Expert config</a> |
                                         <a href="../reconversion.php">Reconversion</a> |
-                                        <a href="manual_config_db.php">Candidates</a> |
+                                        <a href="../candidates_list.php">Candidates</a> |
                                     </font>
                                 </td>
                             </tr>
