@@ -80,12 +80,12 @@ if(!isset($_SESSION["email"]) && empty($_SESSION["password"])){
                                     </tr>
                                     <tr>
                                         <td bgcolor="#ffffcc">1</td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="family_name[0]" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="first_name[0]" size="30"></td>
-                                        <td bgcolor="#ffffcc" width="50"><input name="born_date[0]" type="date"></td>
+                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="family_name[0]" size="30" required></td>
+                                        <td bgcolor="#ffffcc" width="222"><input type="text" name="first_name[0]" required size="30"></td>
+                                        <td bgcolor="#ffffcc" width="50"><input name="born_date[0]" required type="date"></td>
                                         <td bgcolor="#ffffcc" width="45">
-                                            <input type="radio" name="gender[0]" id="" value="M">M
-                                        <input type="radio" name="gender[0]" value="F">F</td>
+                                            <input type="radio" name="gender[0]" id="" value="Male">M
+                                        <input type="radio" name="gender[0]" value="F">Female</td>
                                     </tr>
 
 

@@ -65,7 +65,7 @@
                                         <a href="../selection.php">Config mode</a> |
                                         <a href="manual_config.php">Manual config</a> |
                                         <a href="expert_config.php">Expert config</a> |
-                                        <a href="../reconversion.php">Reconversion</a> |
+                                        <a href="../reconversion_form.php">Reconversion</a> |
                                         <a href="../candidates_list.php">Candidates</a> |
                                     </font>
                                 </td>

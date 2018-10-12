@@ -2,14 +2,6 @@
 require_once ("dbconnect.php");
 //Добавляем файл подключения к БД
 $user_id = $_SESSION['id'];
-if(isset($_POST)) {
-    $n = count($_POST);
-}
-
-/*for($i=0; $i<$N;$i++){
-    print_r ($_POST['family_name'][$i]);
-    echo "<br>";
-}*/
 //Объявляем ячейку для добавления ошибок, которые могут возникнуть при обработке формы.
 $_SESSION["error_messages"] = '';
 
@@ -31,7 +23,7 @@ if (isset($_POST["add_candidates"]) && !empty($_POST["add_candidates"])) {
 
         //Проверяем переменную на пустоту
         if (!empty($family_name)) {
-            for($i=0; $i<$n;$i++) {
+            for($i=0; $i < count($family_name); $i++) {
                 // Для безопасности, преобразуем специальные символы в HTML-сущности
                 $family_name[$i] = htmlspecialchars($family_name[$i], ENT_QUOTES);
             }
@@ -69,7 +61,7 @@ if (isset($_POST["add_candidates"]) && !empty($_POST["add_candidates"])) {
         $first_name= $_POST["first_name"];
 
         if (!empty($first_name)) {
-            for($i=0; $i<$n;$i++) {
+            for($i=0; $i<count($first_name);$i++) {
                 // Для безопасности, преобразуем специальные символы в HTML-сущности
                 $first_name[$i] = htmlspecialchars($first_name[$i], ENT_QUOTES);
             }
@@ -107,7 +99,7 @@ if (isset($_POST["add_candidates"]) && !empty($_POST["add_candidates"])) {
         $born_date = $_POST["born_date"];
 
         if (!empty($born_date)) {
-            for($i=0; $i<$n;$i++) {
+            for($i=0; $i<count($born_date);$i++) {
                 // Для безопасности, преобразуем специальные символы в HTML-сущности
                 $born_date[$i] = htmlspecialchars($born_date[$i], ENT_QUOTES);
             }
@@ -144,7 +136,7 @@ if (isset($_POST["add_candidates"]) && !empty($_POST["add_candidates"])) {
         $gender = $_POST["gender"];
 
         if (!empty($gender)) {
-            for($i=0; $i<$n;$i++) {
+            for($i=0; $i<count($gender);$i++) {
                 // Для безопасности, преобразуем специальные символы в HTML-сущности
                 $gender[$i] = htmlspecialchars($gender[$i], ENT_QUOTES);
             }
@@ -175,7 +167,7 @@ if (isset($_POST["add_candidates"]) && !empty($_POST["add_candidates"])) {
         exit();
     }
 
-    for($i = 0; $i < $n; $i++) {
+    for($i = 0; $i < count($family_name); $i++) {
         //Запрос на добавления пользователя в БД
         $result_query_insert = $mysqli->query("INSERT INTO `candidates` (user_id, family_name, first_name,born_date, gender) VALUES ($user_id,'" . $family_name[$i] . "','" . $first_name[$i] . "','".$born_date[$i]."','" . $gender[$i] . "')");
         if (!$result_query_insert) {
@@ -192,14 +184,14 @@ if (isset($_POST["add_candidates"]) && !empty($_POST["add_candidates"])) {
             //Отправляем пользователя на страницу регистрации и убираем форму регистрации
             header("HTTP/1.1 301 Moved Permanently");
             header("Location: " . $address_site . "candidates_list.php");
-            $_SESSION["success_messages"] .= "<p class='success_message' >candidates added success</p>";
-            exit();
+            //$_SESSION["success_messages"] .= "<p class='success_message' >candidates added success</p>";
+            //exit();
         }
 
         //Закрываем подключение к БД
-        $mysqli->close();
-    }
 
+    }
+    $mysqli->close();
 
 } else {
 
