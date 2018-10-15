@@ -151,9 +151,134 @@ if (isset($_POST["save01"]) && !empty($_POST["save01"])) {
             //exit();
         }
 
-        //Закрываем подключение к БД
 
     }
+
+    /* for reclassifield */
+    if (isset($_POST["reclass_name"])) {
+
+        //Обрезаем пробелы с начала и с конца строки
+        $family_name = trim($_POST["reclass_name"]);
+
+        if (!empty($family_name)) {
+            // Для безопасности, преобразуем специальные символы в HTML-сущности
+            $family_name = htmlspecialchars($family_name, ENT_QUOTES);
+        } else {
+
+            // Сохраняем в сессию сообщение об ошибке.
+            $_SESSION["error_messages"] .= "<p class='mesage_error' >Your Name</p>";
+
+            //Возвращаем пользователя на страницу регистрации
+            header("HTTP/1.1 301 Moved Permanently");
+            header("Location: " . $address_site . "form_register.php");
+
+            //Останавливаем  скрипт
+            exit();
+        }
+
+
+    } else {
+
+        // Сохраняем в сессию сообщение об ошибке.
+        $_SESSION["error_messages"] .= "<p class='mesage_error' >Except name</p>";
+
+        //Возвращаем пользователя на страницу регистрации
+        header("HTTP/1.1 301 Moved Permanently");
+        header("Location: " . $address_site . "form_register.php");
+
+        //Останавливаем  скрипт
+        exit();
+    }
+
+    if (isset($_POST["reclass_fisrt_name"])) {
+
+        //Обрезаем пробелы с начала и с конца строки
+        $first_name = trim($_POST["reclass_fisrt_name"]);
+
+        if (!empty($first_name)) {
+            // Для безопасности, преобразуем специальные символы в HTML-сущности
+            $first_name = htmlspecialchars($first_name, ENT_QUOTES);
+        } else {
+
+            // Сохраняем в сессию сообщение об ошибке.
+            $_SESSION["error_messages"] .= "<p class='mesage_error' >Your First Name</p>";
+
+            //Возвращаем пользователя на страницу регистрации
+            header("HTTP/1.1 301 Moved Permanently");
+            header("Location: " . $address_site . "form_register.php");
+
+            //Останавливаем  скрипт
+            exit();
+        }
+
+
+    } else {
+
+        // Сохраняем в сессию сообщение об ошибке.
+        $_SESSION["error_messages"] .= "<p class='mesage_error' >Except first name</p>";
+
+        //Возвращаем пользователя на страницу регистрации
+        header("HTTP/1.1 301 Moved Permanently");
+        header("Location: " . $address_site . "form_register.php");
+
+        //Останавливаем  скрипт
+        exit();
+    }
+
+    if (isset($_POST["reclass_birth"])) {
+
+        //Обрезаем пробелы с начала и с конца строки
+        $birth_day = trim($_POST["reclass_birth"]);
+
+        if (!empty($birth_day)) {
+            // Для безопасности, преобразуем специальные символы в HTML-сущности
+            $birth_day = htmlspecialchars($birth_day, ENT_QUOTES);
+        } else {
+
+            // Сохраняем в сессию сообщение об ошибке.
+            $_SESSION["error_messages"] .= "<p class='mesage_error' >Birth day</p>";
+
+            //Возвращаем пользователя на страницу регистрации
+            header("HTTP/1.1 301 Moved Permanently");
+            header("Location: " . $address_site . "form_register.php");
+
+            //Останавливаем  скрипт
+            exit();
+        }
+
+
+    } else {
+
+        // Сохраняем в сессию сообщение об ошибке.
+        $_SESSION["error_messages"] .= "<p class='mesage_error' >Birth day except</p>";
+
+        //Возвращаем пользователя на страницу регистрации
+        header("HTTP/1.1 301 Moved Permanently");
+        header("Location: " . $address_site . "form_register.php");
+
+        //Останавливаем  скрипт
+        exit();
+    }
+        $result_query_reclass = $mysqli->query("INSERT INTO `reclassified` (user_id, family_name, first_name, birth_day) VALUES ($user_id,'" . $family_name . "','" . $first_name . "','" . $birth_day . "')");
+        if (!$result_query_reclass) {
+            // Сохраняем в сессию сообщение об ошибке.
+            $_SESSION["error_messages"] .= "<p class='mesage_error' >Error added in DB " . $mysqli->errno . " </p>";
+
+            //Возвращаем пользователя на страницу регистрации
+            header("HTTP/1.1 301 Moved Permanently");
+            header("Location: " . $address_site . "reconversion_form.php");
+
+            //Останавливаем  скрипт
+            exit();
+        } else {
+            //Отправляем пользователя на страницу регистрации и убираем форму регистрации
+            header("HTTP/1.1 301 Moved Permanently");
+            header("Location: " . $address_site . "reconversion_form.php");
+            $_SESSION["success_messages"] .= "<p class='success_message' >info added success</p>";
+            //exit();
+        }
+
+    //Закрываем подключение к БД
     $mysqli->close();
 
 } else {

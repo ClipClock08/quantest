@@ -122,7 +122,7 @@
                             </tr>
                             <tr>
                                 <td valign="top" colspan="2">
-                                    <p><a href="(Empty Reference!)"><font size="2">I forgot my password</font></a></p>
+                                    <p><a href="recovery_pass.php"><font size="2">I forgot my password</font></a></p>
                                 </td>
                             </tr>
                             </tbody>

@@ -263,10 +263,5 @@ if (isset($_SESSION["email"]) && !empty($_SESSION["email"])) {
         </tr>
     </table>
 <?php
-/**
- * Created by PhpStorm.
- * User: alexdev
- * Date: 05.10.18
- * Time: 12:51
- */
+
 include("footer.php");
