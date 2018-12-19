@@ -15,6 +15,8 @@
         echo "<p><strong>Error connecting to the database</strong>. Error description: ".mysqli_connect_error()."</p>";
         exit();
     }
+
+
    
     session_start();
     
