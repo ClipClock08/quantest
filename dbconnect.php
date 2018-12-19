@@ -3,8 +3,8 @@
     header('Content-Type: text/html; charset=utf-8');
 
     $server = "localhost"; /* hostname, if we work on a local server, then we specify localhost */
-    $username = "quantest"; /* DB username */
-    $password = "test@2018"; /* Database user password, if the user does not have a password then leave empty */
+    $username = "alex"; /* DB username */
+    $password = ""; /* Database user password, if the user does not have a password then leave empty */
     $database = "quantest_test"; /* The name of the database you created */
  
     // Connecting to the database via MySQLi
@@ -14,7 +14,7 @@
     if (mysqli_connect_errno()) {
         echo "<p><strong>Error connecting to the database</strong>. Error description: ".mysqli_connect_error()."</p>";
         exit();
-    }else echo "good";
+    }
    
     session_start();
     
