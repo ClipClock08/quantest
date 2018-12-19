@@ -1,0 +1,1 @@
+#In this folder, files from Ajax that load information when choosing a company and subsequent select boxes

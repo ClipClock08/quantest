@@ -1,7 +1,11 @@
 
-<div id="footer" align="center">
-    <p><img src="../images/favicon.jpg" width="29" height="30" border="0"><br>
-    <b>QUANTEST<br></b>Hiring selection and reconversion tests</p>
-</div>
-</body>
+         <footer>
+          
+        	<div id="zone_footer">
+        		<div align="center"> 
+        	    	<h3>&copy; QUANTEST 2018 - Tests de Recrutement et de Reconversion professionnelle</h3>
+                </div>
+         </footer> </div>
+    
+    </body>
 </html>

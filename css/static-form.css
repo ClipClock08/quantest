@@ -1,0 +1,326 @@
+/* form */
+
+.staticform {
+    background: #ffffff;
+    border: 4px #eeeeee solid;
+    text-align: left;
+}
+
+
+
+.staticform h3 {
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+    font-family: DinBlack;
+    color: #065c73;
+    letter-spacing: -0.5px;
+
+    font-size: 23px;
+    line-height: 26px;
+}
+
+.staticform h3 span {
+    color: #333333;
+}
+.staticform p {
+    color: #333333;
+    font-family: DinRegular;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+
+
+.staticform .form-container {
+    margin: 0 auto;
+    width: 80%;
+
+    /*margin: 0 20px;*/
+    color: #333333;
+}
+
+.staticform .form-container form fieldset {
+    width: 100% !important;
+    all: initial;
+}
+
+
+/*#response-sales {
+    display: none;
+}*/
+
+
+.staticform .form-container form .form-notifications {
+    text-align: right;
+    font-style: italic;
+    margin: 0;
+}
+
+.staticform .form-container form .form-notifications p {
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 15px 0 0;
+    float: right;
+    color: #31464f;
+}
+.staticform .form-container form .form-notifications p.error-msg {
+    color: crimson;
+    font-family: DinBold;
+}
+
+
+
+.staticform .form-container form .control-group {
+    margin: 0 0 10px 0;
+}
+
+
+
+.staticform .form-container form input[type="text"], .staticform .form-container form input[type="email"], .staticform .form-container form input[type="password"], .staticform .form-container form textarea {
+    font-size: 16px;
+    color: #27383e;
+    font-family: DinRegular;
+    margin: 0;
+
+    /*width: 300px !important;*/
+    width: 96% !important;
+}
+
+.staticform .select2-container .select2-choice,
+.staticform .select2-results .select2-result-label {
+    font-family: DinRegular !important;
+    color: #27383e;
+
+    width: 301px !important;
+}
+
+
+
+
+.form-container form .control-group .select2-container, .form-container #cformpopup .control-group .select2-container {
+    width: 96%;
+}
+
+
+
+.staticform .form-container form .control-group .select2-container .select2-choice,
+.staticform .form-container #cformpopup .control-group .select2-container .select2-choice {
+/*    width: 301px !important;
+    width: 355px !important;*/
+
+    width: 100% !important;
+}
+
+/*#select2-drop,
+.staticform #select2-drop {
+    width: auto !important;
+}*/
+
+.select2-results {
+    max-height: 301px;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    .span5.right {
+        float: none;
+    }
+}
+
+
+
+
+.staticform #recaptcha-container #recaptcha-webform {
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 640px) {
+    .staticform #recaptcha-container #recaptcha-webform {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 399px) {
+    .staticform #recaptcha-container #recaptcha-webform {
+        margin: 0 0 0 -25px;
+    }
+}
+
+
+
+
+.single-landing-pages .staticform #recaptcha-container #recaptcha-webform {
+    width: 304px;
+    margin: 0 0 0 -20px;
+}
+@media only screen and (min-width: 400px) and (max-width: 640px) {
+    .single-landing-pages .staticform #recaptcha-container #recaptcha-webform {
+        margin: 0 auto;
+        text-align: center;
+        width: 304px;
+    }
+}
+@media only screen and (max-width: 399px) {
+    .single-landing-pages .staticform #recaptcha-container #recaptcha-webform {
+        margin: 0 0 0 -25px;
+    }
+}
+
+
+
+
+
+.staticform #recaptcha-optin {
+    padding: 0 0 15px 0;
+}
+
+.staticform #static-form small {
+    font-size: 11px;
+    line-height: 13px;
+}
+
+
+.staticform #recaptcha-optin {
+    padding: 0 !important;
+    margin: 0 0 15px 0 !important;
+}
+
+
+.staticform .btn.optin,
+.staticform .btn.optin:active,
+.staticform .btn.optin:focus {
+/*    font-size: 24px;
+    width: 97%;
+    padding: 15px;
+    background-color: #333333 !important;
+    border: 1px #333333 solid !important;
+    color: #ffffff !important;
+*/
+    margin: 10px 0 0 0;
+
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+}
+/*.staticform .btn.optin:hover {
+    background-color: #ffffff !important;
+    color: #333333 !important;
+}*/
+
+
+
+.staticform #response-sales {
+    margin: 15px 0 0 0;
+
+    font-size: 16px;
+    color: #31464f;
+}
+
+.staticform #response-sales h1 {
+    font-size: 52px;
+    margin: 30px auto 20px auto;
+    font-family: DinLight;
+    letter-spacing: -1px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+.staticform #response-sales p {
+    color: #333333;
+    font-family: DinRegular;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+
+
+
+
+
+.staticform #response-sales .erroralert {
+    color: crimson;
+    padding: 0;
+    margin: 0;
+}
+.staticform #response-sales .erroralert h2 {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    font-family: DinRegular;
+    color: inherit;
+    text-align: left;
+}
+.staticform #response-sales .erroralert p {
+    color: inherit;
+    font-family: DinRegular;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#consent:not(:checked) + label {
+    color: crimson !important;
+    font-style: italic;
+} 
+#consent:checked + label {
+    color: #737373 !important;
+    font-style: normal;
+}
+/*input[type=checkbox] + label {
+    color: crimson !important;
+    font-style: italic;
+} 
+input[type=checkbox]:checked + label {
+    color: #737373 !important;
+    font-style: normal;
+}*/
+
+
+
+
+/* reCaptcha custo */
+/*.rc-anchor-light.rc-anchor-normal {
+    border: 1px solid #d3d3d3 !important;
+}
+.rc-anchor-light {
+    background: #ffffff !important;
+    color: #333333 !important;
+    font-family: DinRegular !important;
+}
+.rc-anchor-normal {
+    height: 74px !important;
+    width: 300px !important;
+}
+.rc-anchor {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+}*/
+
+
+#optinsales.active {
+    background: #054f64 !important;
+    border: 1px #054f64 solid !important;
+    color: #ffffff !important;
+}
+#optinsales.active:hover {
+    background: #ffffff !important;
+    border: 1px #054f64 solid !important;
+    color: #054f64 !important;
+}
+#optinsales.notactive,
+#optinsales.notactive:hover {
+    background: #a4b4b4 !important;
+    border: 1px #a4b4b4 solid !important;
+    color: #ffffff !important;
+}

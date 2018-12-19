@@ -1,28 +1,29 @@
 <?php
-    // Указываем кодировку
+    // Specify the encoding
     header('Content-Type: text/html; charset=utf-8');
 
-    $server = "localhost"; /* имя хоста (уточняется у провайдера), если работаем на локальном сервере, то указываем localhost */
-    $username = "phpmyadmin"; /* Имя пользователя БД */
-    $password = "q"; /* Пароль пользователя БД, если у пользователя нет пароля то, оставляем пустым */
-    $database = "quantest.loc"; /* Имя базы данных, которую создали */
+    $server = "localhost"; /* hostname, if we work on a local server, then we specify localhost */
+    $username = "quantest"; /* DB username */
+    $password = "test@2018"; /* Database user password, if the user does not have a password then leave empty */
+    $database = "quantest_test"; /* The name of the database you created */
  
-    // Подключение к базе данных через MySQLi
+    // Connecting to the database via MySQLi
     $mysqli = new mysqli($server, $username, $password, $database);
 
-    // Проверяем, успешность соединения. 
-    if (mysqli_connect_errno()) { 
-        echo "<p><strong>Ошибка подключения к БД</strong>. Описание ошибки: ".mysqli_connect_error()."</p>";
-        exit(); 
-    }
+    // Connecting to the database via MySQLi 
+    if (mysqli_connect_errno()) {
+        echo "<p><strong>Error connecting to the database</strong>. Error description: ".mysqli_connect_error()."</p>";
+        exit();
+    }else echo "good";
+   
     session_start();
-
-    // Устанавливаем кодировку подключения
+    
+    // Set the connection encoding
     $mysqli->set_charset('utf8');
 
-    //Для удобства, добавим здесь переменную, которая будет содержать название нашего сайта
-    $address_site = "http://confirm.email/";
+    //For convenience, we will add a variable here that will contain the name of our site.
+    $address_site = "https://quantest.eu/";
 
-    //Почтовый адрес администратора сайта
-    $email_admin = "clipclock08@gmail.com";
+    //Email address of the site administrator
+    $email_admin = "amaindroite@gmail.com";
 ?>

@@ -1,0 +1,379 @@
+https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1607616-le-responsive-design-avec-les-media-queries
+
+/* Paragraphes en bleu par défaut */
+
+p {
+	font-size: 15px;
+    line-height: 22px;
+    color: #ffffff;
+	}
+
+#bloc_page
+{
+    width: 800px;
+    margin: auto;
+	margin-bottom: 40px;
+}
+
+@media all and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width: auto;
+    }
+}
+
+@media all and (max-width: 1024px)
+{
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+    
+ 
+    
+  nav a:hover
+{
+    color: #396A93;
+    border-bottom: 3px solid #396A93;
+}
+}
+
+@media all and (max-width: 1024px)
+
+{
+    #banniere_image
+
+    {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1024px)
+{
+    section
+    {
+        flex-direction: column;
+    }
+
+    article, aside
+    {
+        width: auto;
+        margin-bottom: 15px;
+    }
+    
+    #fleche_bulle
+    {
+        display: none;
+    }
+    
+    #photo_auteur img
+    {
+        width: auto;
+        float: right;
+        margin-left: 15px;
+    }
+    
+    aside p:last-child
+    {
+		text-align: center;
+    }
+}
+
+/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 1280px */
+@media screen and (max-width: 1280px)
+
+/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
+@media all and (min-width: 1024px) and (max-width: 1280px)
+
+/* Sur tous types d'écrans orientés verticalement */
+@media all and (orientation: portrait)
+
+/* Définition des polices personnalisées */
+
+@font-face {
+    font-family: 'DinRegular';
+    src: url("../fonts/din_regular-webfont.eot");
+    src: url("../fonts/din_regular-webfont.eot") format("embedded-opentype"), url("../studio/fonts/din_regular-webfont.woff") format("woff"), url("../fonts/din_regular-webfont.ttf") format("truetype"), url("../fonts/din_regular-webfont.svg#dinregular") format("svg");
+}
+
+@font-face {
+    font-family: 'DinLight';
+    src: url("../fonts/din_light-webfont.eot");
+    src: url("../fonts/din_light-webfont.eot") format("embedded-opentype"), url("../fonts/din_light-webfont.woff") format("woff"), url("../studio/din_light-webfont.ttf") format("truetype"), url("..fonts/din_light-webfont.svg#dinlight") format("svg");
+}
+
+@font-face {
+    font-family: 'DinBold';
+    src: url("../fonts/din_bold-webfont.eot");
+    src: url("../fonts/din_bold-webfont.eot") format("embedded-opentype"), url("../fonts/din_bold-webfont.woff") format("woff"), url("../fonts/din_bold-webfont.ttf") format("truetype"), url("../fonts/din_bold-webfont.eot.svg#dinbold") format("svg");
+}
+
+@font-face {
+    font-family: 'DinBlack';
+    src: url("../fonts/din_black-webfont.eot");
+    src: url("../fonts/din_black-webfont.eot") format("embedded-opentype"), url("../fonts/din_black-webfont.woff") format("woff"), url("../fonts/din_black-webfont.ttf") format("truetype"), url("../fonts/din_black-webfont.eot.svg#dinblack") format("svg");
+}
+
+@font-face {
+    font-family: 'DinMedium';
+    src: url("../fonts/din_medium-webfont.eot");
+    src: url("../fonts/din_medium-webfont.eot") format("embedded-opentype"), url("../fonts/din_medium-webfont.woff") format("woff"), url("../fonts/din_medium-webfont.ttf") format("truetype"), url("../fonts/din_medium-webfont.eot.svg#dinmedium") format("svg");
+}
+
+
+/* Eléments principaux de la page */
+
+body {
+    font-size: 13px;
+	background: #fff;
+    font-family: arial
+}
+
+body #container {
+    min-width: 960px;
+    padding: 0
+}
+
+h1
+{
+    font-size: 25px;
+	line-height: 32px;
+	font-family: DinBold;
+	color: #245060;
+	letter-spacing: -1px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0px 0 25px 0;
+}
+
+h2
+{
+	font-size: 20px;
+	line-height: 22px;
+	font-family: DinLight;
+	color: #245060;
+	letter-spacing: -1px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 35px 0 0;
+}
+
+h3
+{
+	font-family: DinLight;
+	font-size: 17px;
+	line-height: 23px;
+	color: white;
+	
+	font-weight: normal;
+	margin: 0;
+	padding: 0 35px 0 0;
+}
+
+h4
+{
+	font-family: DinMedium;
+	font-size: 17px;
+	line-height: 18px;
+	color: #245060;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 35px 0 0;
+}
+
+h5
+{
+	font-family: DinMedium;
+	font-size: 15px;
+	line-height: 16px;
+	color: #4b4b4b;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 35px 0 0;
+}
+
+/* Header */
+
+header
+{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+	width: 162px;
+    height: 85px;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a:hover
+{
+    color: #396A93;
+    border-bottom: 3px solid #396A93;
+}
+
+/* visited link */
+a:visited {
+    color: #396A93;
+	border-bottom: 3px solid #396A93;
+}
+
+/* Bannière */
+
+#zone_blue
+{
+    position: relative;
+    width: 99.5%;
+    height: 90px;
+	box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-left: 10px;
+    background-color: #0f4f64;
+    color: white;
+    font-size: 0.8em;
+    
+}
+
+#zone_footer
+{
+    position: relative;
+    width: 99.5%;
+    height: 40px;
+    padding-top: 13px;
+    padding-left: 10px;
+    background-color: #0f4f64;
+    color: white;
+    font-size: 0.8em;
+    
+}
+
+/* Corps */
+
+section
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+
+aside
+{
+ 
+    position: relative;
+	margin-top: 20px;
+    background-color: #0f4f64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+
+
+aside img
+{
+    margin-right: 5px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    background:  url('') repeat-x top;
+    padding-top: 25px;
+}
+
+
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 960px;
+  height: 200px;
+  align-content: space-between;
+}
+
+.cancel{
+    cursor: pointer;
+}
+
+/*For bar*/
+#grad1 {
+    width: 50px;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    transform: rotate(180deg);
+}
+
+#bar {
+    width: 50px;
+    height: 0;
+    background: linear-gradient(to bottom, red,yellow,green); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#status {
+    font-size: 19px;
+    font-weight: bold;
+    transform: rotate(180deg);
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: green;
+}
+
