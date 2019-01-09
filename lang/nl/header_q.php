@@ -1,3 +1,4 @@
+<!doctype html>
 <?php
 require_once ("dbconnect.php");
 $path = $_SERVER['SCRIPT_URL'];
@@ -57,7 +58,7 @@ $path = $_SERVER['SCRIPT_URL'];
        // print_r($row);
     }
 ?>
-
+<html>
 <head>  
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

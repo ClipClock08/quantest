@@ -1,3 +1,4 @@
+<!doctype html>
 <?php
     require_once ("../dbconnect.php");
     $path = $_SERVER['SCRIPT_URL'];
@@ -56,7 +57,7 @@
        // print_r($row);
     }
 ?>
-
+<html>
 <head>  
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,7 +72,7 @@
 
     
 	
-    <body>
+   
 		<div id="bloc_page">
 			<div align="right">
 				<nav><a href="<?php echo $pathEn; ?>">EN</a> | <a href="<?php echo $pathFr; ?>">FR</a> | <a href="<?php echo $pathDe; ?>">DE</a> | <a href="<?php echo $pathNl; ?>">NL</a> | <a href="<?php echo $pathIt; ?>">IT</a></nav>
@@ -80,9 +81,8 @@
                             if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){
                                 // if not, then display the block with links to the registration and authorization page
                                 ?>
-                                    <li><a href="../form_register.php">Registreren</a></li>
-    
-                                    <li><a href="../form_auth.php">Inloggen</a></li>
+        <a href="../form_register.php">Registreren</a>
+    <a href="../form_auth.php">Inloggen</a>
                                 <?php
                             }else{
                                //If the user is authorized, then output the link Logout
@@ -110,9 +110,9 @@
                 
                 <nav>
                     <ul>
-                       <li><a href="https://quantest.eu/lang/nl/config/expert_config.php">WERVING</a></li>
-                        <li><a href="https://quantest.eu/lang/nl/reconversion_form.php">RECONVERSIE</a></li>
-						<li><a href="https://quantest.eu/lang/nl/quotation_form.php"><b>Bereken en bestel</b></a></li>
+   <li><a href="https://quantest.eu/lang/nl/config/expert_config.php">WERVING</a></li>
+   <li><a href="https://quantest.eu/lang/nl/reconversion_form.php">RECONVERSIE</a></li>
+	<li><a href="https://quantest.eu/lang/nl/quotation_form.php"><b>Bereken en bestel</b></a></li>
                         
                     </ul>
                 </nav>

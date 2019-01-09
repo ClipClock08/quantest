@@ -1,5 +1,8 @@
 <?php
-require_once ("../dbconnect.php");
+require ("C:\OSPanel\domains\quantest.loc/dbconnect.php");
+echo "<pre>";
+print_r($_SESSION);
+echo "</pre>";
 /*
  //for profile name + surname
     $email = $_SESSION['email'];
@@ -42,7 +45,7 @@ require_once ("../dbconnect.php");
 	<a href="https://quantest.online/admin/getPoints.php">get_points</a>
                          <?php
                             //Check if the user is authorized
-                            if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){
+                            if(!isset($_SESSION['email_admin']) && !isset($_SESSION['password_admin'])){
                                 // if not, then display the block with links to the registration and authorization page
                                 ?>
 									<a href="admin_auth.php">Log in</a>

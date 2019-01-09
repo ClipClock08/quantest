@@ -111,13 +111,13 @@
 
 /*for click version*/
 .buttonuch {
-    background: silver;
-    color:black;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+  background: silver;
+  color:black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
 .button:hover {

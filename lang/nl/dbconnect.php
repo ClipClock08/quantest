@@ -22,7 +22,7 @@
     $mysqli->set_charset('utf8');
 
     //For convenience, we will add a variable here that will contain the name of our site.
-    $address_site = "https://quantest.ue/";
+    $address_site = "https://quantest.eu/";
 
     //Email address of the site administrator
     $email_admin = "amaindroite@gmail.com";

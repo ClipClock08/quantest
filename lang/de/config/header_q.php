@@ -1,3 +1,4 @@
+<!doctype html>
 <?php
     require_once ("../dbconnect.php");
 $path = $_SERVER['SCRIPT_URL'];
@@ -56,7 +57,7 @@ $path = $_SERVER['SCRIPT_URL'];
        // print_r($row);
     }
 ?>
-
+<html>
 <head>  
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,8 +71,7 @@ $path = $_SERVER['SCRIPT_URL'];
 </head>
 
     
-	
-    <body>
+   
 		<div id="bloc_page">
 			<div align="right">
 				<nav><a href="<?php echo $pathEn; ?>">EN</a> | <a href="<?php echo $pathFr; ?>">FR</a> | <a href="<?php echo $pathDe; ?>">DE</a> | <a href="<?php echo $pathNl; ?>">NL</a> | <a href="<?php echo $pathIt; ?>">IT</a></nav>
@@ -118,5 +118,5 @@ $path = $_SERVER['SCRIPT_URL'];
 			</div>
 			<div class="wrapper">
 	
-  </body>
 
+  <body>

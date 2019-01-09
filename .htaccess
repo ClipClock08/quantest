@@ -1,8 +1,0 @@
-
-RewriteEngine on
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP:X-Forwarded-SSL} !on
-RewriteCond %{HTTP_HOST} ^quantest\.eu$ [OR]
-RewriteCond %{HTTP_HOST} ^www\.quantest\.eu$
-RewriteRule ^/?$ "https\:\/\/quantest\.eu\/" [R=301,L]
-

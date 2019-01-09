@@ -1,6 +1,6 @@
 <?php 
 
-    include ('../dbconnect.php');
+    include ('../../../dbconnect.php');
     
     //print_r($_POST);
     if(isset($_POST['test_type']) && isset ($_POST['id_client'])){

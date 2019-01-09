@@ -47,15 +47,15 @@ include ("header_q.php");
 						<tbody>
 							<tr>
 								<td valign="middle" width="181">
-									<div align="left">
-										</div>
+									Titolo della funzione
+										
 								</td>
 								<td><input name="job[0]" placeholder="es: direttore commerciale" size="50" type="text"></td>
 							</tr>
 							<tr>
 								<td valign="top" width="181">
-									<div align="left">
-										Statuto sociale:</div>
+									
+										Statuto sociale:
 								</td>
 								<td>
                                     <select name="fonction_exp" id="fonction_exp">
@@ -63,15 +63,12 @@ include ("header_q.php");
                                         <option value="2">Quadro superiore</option>
                                         <option value="3">Quadro medio</option>
                                         <option value="4">Impiegato</option>
-                                        <option value="5">Operaio</option>
-                                        <option value="6">Apprendista/ Studente</option>
+                                        <option value="5">Operaio</option>   
                                     </select></td>
 							</tr>
 							<tr>
 								<td valign="top" width="181">
-									<div align="left">
-										Candidati per testare:
-										</div>
+									Candidati per testare:
 								</td>
 								<td><input type="text" placeholder="1,2,3,.." id="nbCandidats" name="nbCandidates" size="4"></td>
 							</tr>
@@ -104,15 +101,13 @@ include ("header_q.php");
 						<tbody>
 							<tr>
 								<td valign="top" width="288">
-									<div align="left">
-										Collaboratore(i) da riclassificare:</div>
+									Collaboratore(i) da riclassificare:
 								</td>
 								<td width="75"><input type="text" placeholder="1,2,3,.." id="nbCandidates" name="specification_cap" size="4"></td>
 							</tr>
 							<tr>
 								<td valign="top" width="288">
-									<div align="left">
-										Opzioni di riclassificazione:</div>
+								Opzioni di riclassificazione:
 								</td>
 								<td width="75"><input type="text" placeholder="1,2,3,.." id="nbCandidates" name="specification_cap" size="4"></td>
 							</tr>

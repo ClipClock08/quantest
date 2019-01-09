@@ -7,11 +7,11 @@ function goProff() {
 }
 
 function manual() {
-    window.location = "config/manual_config.php";
+    window.location = "manual_config.php";
 }
 
 function expert() {
-    window.location = "config/expert_config.php";
+    window.location = "expert_config.php";
 }
 
 

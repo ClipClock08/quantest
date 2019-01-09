@@ -68,7 +68,7 @@ Cliccando su "Continua" accedi al modulo per l'introduzione dei candidati da tes
                                 if(!isset($_SESSION["email"]) && empty($_SESSION["password"])){
                                    echo "<div valign='top'><a class='buttonuch' href='#popup1'> Continua </a></div>";
                                 }else{
-                                    echo "<input name='expert_conf' value='Continue' type='submit'>";
+                                    echo "<input name='expert_conf' value='Continua' type='submit'>";
                                 }
                             ?></p>
                         </div>

@@ -1,10 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e67d66b9-6bcf-4760-8961-4d5e43f8be83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e67d66b9-6bcf-4760-8961-4d5e43f8be83" name="Default Changelist" comment="many changes">
+      <change afterPath="$PROJECT_DIR$/lang/en/view/candidates_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/error_log" beforeDir="false" afterPath="$PROJECT_DIR$/admin/error_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/quantest.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/quantest.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dbconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbconnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexDE.php" beforeDir="false" afterPath="$PROJECT_DIR$/indexDE.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexFR.php" beforeDir="false" afterPath="$PROJECT_DIR$/indexFR.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexIT.php" beforeDir="false" afterPath="$PROJECT_DIR$/indexIT.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexNL.php" beforeDir="false" afterPath="$PROJECT_DIR$/indexNL.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/de/config/error_log" beforeDir="false" afterPath="$PROJECT_DIR$/lang/de/config/error_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/de/config/header_q.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/de/config/header_q.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/de/error_log" beforeDir="false" afterPath="$PROJECT_DIR$/lang/de/error_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/de/header_q.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/de/header_q.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/activation.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/admin/admin_reconversion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/admin/admin_selection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/admin/error_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/admin/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/admin/header_q.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/admin/logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/admin/reconversion_db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/admin/selection_db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/admin/test_result.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/ajax/candidate_jobs.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/en/ajax/candidate_jobs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/ajax/candidates_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/en/ajax/candidates_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/ajax/error_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/ajax/jobs_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/en/ajax/jobs_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/ajax/reclass.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/en/ajax/reclass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/candidates.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/confidentiality.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/config/error_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/config/expert_config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/config/expert_config_db.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/config/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/config/header_q.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/config/logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/dbconnect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/error_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/form_auth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/form_register.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/gettingStarted.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/header_q.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/profile.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/quotation_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/reconversion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/reconversion_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/recovery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/recovery_pass.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/register.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/terms_of_sale.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/en/welcome.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/fr/config/error_log" beforeDir="false" afterPath="$PROJECT_DIR$/lang/fr/config/error_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/fr/config/header_q.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/fr/config/header_q.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/fr/error_log" beforeDir="false" afterPath="$PROJECT_DIR$/lang/fr/error_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/fr/header_q.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/fr/header_q.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/it/config/error_log" beforeDir="false" afterPath="$PROJECT_DIR$/lang/it/config/error_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/it/config/expert_config.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/it/config/expert_config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/it/config/header_q.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/it/config/header_q.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/it/error_log" beforeDir="false" afterPath="$PROJECT_DIR$/lang/it/error_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/it/header_q.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/it/header_q.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/it/quotation_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/it/quotation_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/nl/config/error_log" beforeDir="false" afterPath="$PROJECT_DIR$/lang/nl/config/error_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/nl/config/header_q.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/nl/config/header_q.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/nl/dbconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/nl/dbconnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/nl/error_log" beforeDir="false" afterPath="$PROJECT_DIR$/lang/nl/error_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/nl/header_q.php" beforeDir="false" afterPath="$PROJECT_DIR$/lang/nl/header_q.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,63 +87,136 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-818689646">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PHP" value="3" />
-          <entry key="PLAIN_TEXT" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PHP" value="5" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbconnect.php">
+        <entry file="file://$PROJECT_DIR$/lang/en/view/reconversion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="640">
+              <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lang/en/form_register.php">
+        <entry file="file://$PROJECT_DIR$/lang/en/view/reconversion_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/en/view/profile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="419">
+              <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/en/ajax/candidates_list.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="97" column="2" lean-forward="true" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lang/en/register.php">
+        <entry file="file://$PROJECT_DIR$/lang/en/view/candidates_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+            <state relative-caret-position="17">
+              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/en/view/auth/error_log">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/en/view/header_q.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="2" selection-start-line="8" selection-end-line="10" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/admin/auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/en/view/expert_config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lang/en/view/auth/auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="165" lean-forward="true" selection-start-line="148" selection-start-column="28" selection-end-line="165" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>https://quantest</find>
+      <find>quantest.</find>
+      <find>https://</find>
+      <find>https://q</find>
+      <find>address</find>
+      <find>color</find>
+      <find>log</find>
+      <find>lang/en/form_register.php</find>
+      <find>lang/en/view/form_register.php</find>
+      <find>asdgasdgads</find>
+      <find>quan</find>
+      <find>lang/en/view/form_auth.php</find>
+      <find>lang/en/view/view/form_auth.php</find>
+      <find>window.l</find>
+      <find>quantest.loc</find>
+      <find>req</find>
+      <find>pass</find>
+      <find>/home/quantest/public_html/</find>
+      <find>by c</find>
+      <find>m</find>
+      <find>close</find>
+      <find>en/config</find>
+      <find>test for</find>
+      <find>user</find>
+      <find>email</find>
+      <find>cand</find>
+      <find>id</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>lang/en/view/auth/form_register.php</replace>
+      <replace>lang/en/view/view/form_auth.php</replace>
+      <replace>lang/en/view/auth/form_auth.php</replace>
+      <replace>en/view</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\OSPanel\domains\quantest.loc\lang\en</dir>
+      <dir>C:\OSPanel\domains\quantest.loc</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,18 +224,66 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/lang/nl/index.php" />
+        <option value="$PROJECT_DIR$/lang/nl/welcome.php" />
+        <option value="$PROJECT_DIR$/lang/nl/quotation_form.php" />
+        <option value="$PROJECT_DIR$/lang/it/config/expert_config.php" />
+        <option value="$PROJECT_DIR$/lang/en/config/header_q.php" />
+        <option value="$PROJECT_DIR$/lang/fr/header_q.php" />
+        <option value="$PROJECT_DIR$/lang/nl/gettingStarted.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/footer.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/layouts/confidentiality.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/layouts/gettingStarted.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/layouts/terms_of_sale.php" />
+        <option value="$PROJECT_DIR$/admin/admin_selection.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/auth/form_auth.php" />
+        <option value="$PROJECT_DIR$/lang/en/admin/header_q.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/quotation_form.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/auth/profile.php" />
+        <option value="$PROJECT_DIR$/lang/en/admin/admin_reconversion.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/auth/form_register.php" />
+        <option value="$PROJECT_DIR$/admin/admin.php" />
+        <option value="$PROJECT_DIR$/js/myModal.js" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/css/quantest.css" />
+        <option value="$PROJECT_DIR$/lang/en/dbconnect.php" />
+        <option value="$PROJECT_DIR$/lang/en/admin/reconversion_db.php" />
+        <option value="$PROJECT_DIR$/lang/en/admin/selection_db.php" />
+        <option value="$PROJECT_DIR$/lang/en/admin/test_result.php" />
+        <option value="$PROJECT_DIR$/lang/en/ajax/candidate_jobs.php" />
+        <option value="$PROJECT_DIR$/lang/en/ajax/jobs_list.php" />
+        <option value="$PROJECT_DIR$/lang/en/ajax/reclass.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/auth/activation.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/auth/ajax_auth.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/auth/register.php" />
         <option value="$PROJECT_DIR$/dbconnect.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/welcome.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/reconversion.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/auth/recovery.php" />
+        <option value="$PROJECT_DIR$/indexDE.php" />
+        <option value="$PROJECT_DIR$/indexIT.php" />
+        <option value="$PROJECT_DIR$/indexNL.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/candidates.php" />
+        <option value="$PROJECT_DIR$/css/popup.css" />
+        <option value="$PROJECT_DIR$/lang/en/view/expert_config_db.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/auth/auth.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/expert_config.php" />
+        <option value="$PROJECT_DIR$/lang/en/ajax/candidates_list.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/profile.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/reconversion_form.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/candidates_list.php" />
+        <option value="$PROJECT_DIR$/lang/en/view/header_q.php" />
+        <option value="$PROJECT_DIR$/admin/auth.php" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  <component name="PhpServers">
+    <servers />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="241" />
+    <option name="x" value="240" />
     <option name="y" value="-5" />
     <option name="width" value="1025" />
     <option name="height" value="725" />
@@ -102,19 +298,62 @@
         <subPane>
           <expand>
             <path>
-              <item name="quantest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quantest" type="462c0819:PsiDirectoryNode" />
+              <item name="quantest.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quantest.loc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="quantest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quantest" type="462c0819:PsiDirectoryNode" />
+              <item name="quantest.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quantest.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quantest.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quantest.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="ajax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quantest.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quantest.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quantest.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quantest.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quantest.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quantest.loc" type="462c0819:PsiDirectoryNode" />
               <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="quantest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quantest" type="462c0819:PsiDirectoryNode" />
+              <item name="quantest.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quantest.loc" type="462c0819:PsiDirectoryNode" />
               <item name="lang" type="462c0819:PsiDirectoryNode" />
               <item name="en" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quantest.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quantest.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+              <item name="ajax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quantest.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quantest.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quantest.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quantest.loc" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="en" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -124,7 +363,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../modules/php/PHP-5.6-x64/php.exe" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\quantest.loc\lang\en\view" />
+      <recent name="C:\OSPanel\domains\quantest.loc\css" />
+      <recent name="C:\OSPanel\domains\quantest.loc\js" />
+      <recent name="C:\OSPanel\domains\quantest.loc\lang\en\admin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\quantest.loc\lang\en\view\auth" />
+      <recent name="C:\OSPanel\domains\quantest.loc\lang\en\view" />
+      <recent name="C:\OSPanel\domains\quantest.loc\lang\en\view\layouts" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -149,22 +402,41 @@
       <option name="presentableId" value="Default" />
       <updated>1545257863509</updated>
       <workItem from="1545257864614" duration="21000" />
-      <workItem from="1545257887142" duration="591000" />
+      <workItem from="1545257887142" duration="989000" />
+      <workItem from="1545325502244" duration="1009000" />
+      <workItem from="1545376779607" duration="215000" />
+      <workItem from="1545383167271" duration="32000" />
+      <workItem from="1545384427514" duration="297000" />
+      <workItem from="1545468272231" duration="107000" />
+      <workItem from="1545468427629" duration="673000" />
+      <workItem from="1545469677568" duration="10219000" />
+      <workItem from="1545570876203" duration="13276000" />
+      <workItem from="1545685125237" duration="1209000" />
+      <workItem from="1545736814766" duration="157000" />
+      <workItem from="1545926052462" duration="348000" />
+      <workItem from="1545934392469" duration="2959000" />
+      <workItem from="1546101992880" duration="6335000" />
+      <workItem from="1546122219674" duration="32000" />
+      <workItem from="1546169826025" duration="1747000" />
+      <workItem from="1546937534330" duration="829000" />
+      <workItem from="1547035066291" duration="5872000" />
+      <workItem from="1547042864808" duration="6578000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="612000" />
+    <option name="totallyTimeSpent" value="52904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25033557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29865772" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.3297587" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.18498659" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -173,8 +445,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32707775" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -184,33 +457,309 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="many changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="many changes" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dbconnect.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lang/en/form_register.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="97" column="2" lean-forward="true" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lang/en/register.php">
+    <entry file="file://$PROJECT_DIR$/lang/en/view/layouts/confidentiality.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+        <state relative-caret-position="596">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/lang/en/view/layouts/gettingStarted.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/layouts/terms_of_sale.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/auth/form_auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2737">
+          <caret line="161" column="62" selection-start-line="161" selection-start-column="62" selection-end-line="161" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/quotation_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2482">
+          <caret line="146" column="94" selection-start-line="146" selection-start-column="94" selection-end-line="146" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/auth/form_register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="173" column="2" selection-start-line="173" selection-start-column="2" selection-end-line="173" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/admin/admin_reconversion.php" />
+    <entry file="file://$PROJECT_DIR$/lang/en/view/auth/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4403">
+          <caret line="259" selection-start-line="259" selection-end-line="259" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/LIVE-admin_auth.php">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin_selection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="75" column="42" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/myModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.popup.js" />
+    <entry file="file://$PROJECT_DIR$/css/jquery.popup.css" />
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/quantest.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="98" column="249" lean-forward="true" selection-start-line="98" selection-start-column="249" selection-end-line="98" selection-end-column="249" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/dbconnect.php" />
+    <entry file="file://$PROJECT_DIR$/lang/en/admin/reconversion_db.php" />
+    <entry file="file://$PROJECT_DIR$/lang/en/admin/selection_db.php" />
+    <entry file="file://$PROJECT_DIR$/lang/en/admin/test_result.php" />
+    <entry file="file://$PROJECT_DIR$/lang/en/ajax/candidate_jobs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/admin/header_q.php" />
+    <entry file="file://$PROJECT_DIR$/lang/en/ajax/jobs_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbconnect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/ajax/reclass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/welcome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/auth/recovery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/indexDE.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/indexIT.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/indexNL.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/ajax/getCandidates.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/popup.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/candidates.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="216" column="40" lean-forward="true" selection-start-line="216" selection-start-column="40" selection-end-line="216" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/auth/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/expert_config_db.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/auth/activation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/auth/ajax_auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/auth/error_log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/expert_config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="98" lean-forward="true" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/reconversion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/ajax/candidates_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="83" column="51" selection-start-line="83" selection-start-column="51" selection-end-line="83" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2043" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/reconversion_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/candidates_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/header_q.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="2" selection-start-line="8" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lang/en/view/auth/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="165" lean-forward="true" selection-start-line="148" selection-start-column="28" selection-end-line="165" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

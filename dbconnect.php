@@ -1,6 +1,4 @@
 <?php
-    // Specify the encoding
-    header('Content-Type: text/html; charset=utf-8');
 
     $server = "localhost"; /* hostname, if we work on a local server, then we specify localhost */
     $username = "alex"; /* DB username */
@@ -16,15 +14,13 @@
         exit();
     }
 
-
-   
     session_start();
     
     // Set the connection encoding
     $mysqli->set_charset('utf8');
 
     //For convenience, we will add a variable here that will contain the name of our site.
-    $address_site = "https://quantest.eu/";
+    $address_site = "http://quantest.loc/";
 
     //Email address of the site administrator
     $email_admin = "amaindroite@gmail.com";

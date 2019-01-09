@@ -57,11 +57,11 @@ $path = $_SERVER['SCRIPT_URL'];
        // print_r($row);
     }
 ?>
-
+<html>
 <head>  
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="title" "<?php echo($pageTitle);?>">
+	<meta name="title" content="<?php echo($pageTitle);?>">
 	<meta name="description" content="<?php echo($pageDescription); ?>">
     <link rel="stylesheet" href="https://quantest.eu/css/quantest.css" />
     <link rel="stylesheet" href="https://quantest.eu/css/popup.css" />
