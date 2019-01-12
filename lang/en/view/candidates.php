@@ -257,14 +257,14 @@ elseif (isset($_POST["add_candidates"]) && !empty($_POST["add_candidates"])) {
 
             //We return the user to the candidates registration page
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "lang/en/candidates_list.php");
+            header("Location: " . $address_site . "lang/en/view/candidates_list.php");
 
             //Removable script
             exit();
         } else {
             //We send the user to the registration page and remove the registration form
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "lang/en/candidates_list.php");
+            header("Location: " . $address_site . "lang/en/view/candidates_list.php");
             //$_SESSION["success_messages"] .= "<p class='success_message' >candidates added success</p>";
             //exit();
         }

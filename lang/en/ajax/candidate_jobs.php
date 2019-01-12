@@ -7,7 +7,7 @@
     if(isset($_POST['candidate']) && isset ($_POST['id_client']))
     {
     
-        $result = $mysqli->query("SELECT * FROM expert_config WHERE user_id = 1");
+        $result = $mysqli->query("SELECT * FROM expert_config WHERE user_id = ".$_POST['id_client']);
         //".$_POST['id_client']);
     
         if($result)

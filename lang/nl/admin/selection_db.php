@@ -61,7 +61,7 @@
             $_SESSION['candidates'] = $cand_arr;
             
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -74,7 +74,7 @@
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -87,7 +87,7 @@
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -122,7 +122,7 @@ elseif(isset($_POST["choose"]) && !empty($_POST["choose"])){
             mysqli_free_result($result);
             
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -135,7 +135,7 @@ elseif(isset($_POST["choose"]) && !empty($_POST["choose"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -148,7 +148,7 @@ elseif(isset($_POST["choose"]) && !empty($_POST["choose"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -172,7 +172,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -185,7 +185,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -207,7 +207,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -220,7 +220,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -241,7 +241,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -254,7 +254,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -275,7 +275,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -288,7 +288,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -310,7 +310,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -323,7 +323,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -345,7 +345,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -358,7 +358,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
     
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
     
             //Останавливаем скрипт
             exit();
@@ -379,7 +379,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -392,7 +392,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
     
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
     
             //Останавливаем скрипт
             exit();
@@ -413,7 +413,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -426,7 +426,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
     
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
     
             //Останавливаем скрипт
             exit();
@@ -447,7 +447,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -460,7 +460,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
     
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
     
             //Останавливаем скрипт
             exit();
@@ -481,7 +481,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -494,7 +494,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
     
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
     
             //Останавливаем скрипт
             exit();
@@ -515,7 +515,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -528,7 +528,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
     
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
     
             //Останавливаем скрипт
             exit();
@@ -549,7 +549,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -562,7 +562,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
     
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
     
             //Останавливаем скрипт
             exit();
@@ -583,7 +583,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -596,7 +596,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
     
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
     
             //Останавливаем скрипт
             exit();
@@ -617,7 +617,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -630,7 +630,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
     
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
     
             //Останавливаем скрипт
             exit();
@@ -651,7 +651,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -664,7 +664,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
     
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
     
             //Останавливаем скрипт
             exit();
@@ -685,7 +685,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -698,7 +698,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
     
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
     
             //Останавливаем скрипт
             exit();
@@ -719,7 +719,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -732,7 +732,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
     
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
     
             //Останавливаем скрипт
             exit();
@@ -753,7 +753,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -766,7 +766,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
     
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
     
             //Останавливаем скрипт
             exit();
@@ -787,7 +787,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -800,7 +800,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -821,7 +821,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -834,7 +834,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -855,7 +855,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -868,7 +868,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -889,7 +889,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -902,7 +902,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -923,7 +923,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -936,7 +936,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -957,7 +957,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -970,7 +970,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -991,7 +991,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -1004,7 +1004,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -1025,7 +1025,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -1038,7 +1038,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -1059,7 +1059,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -1072,7 +1072,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -1093,7 +1093,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -1106,7 +1106,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -1127,7 +1127,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+            header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
             //Останавливаем скрипт
             exit();
@@ -1140,7 +1140,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем скрипт
         exit();
@@ -1161,7 +1161,7 @@ elseif(isset($_POST["saveResult"]) && !empty($_POST["saveResult"])){
 
         //Возвращаем пользователя на страницу регистрации
         header("HTTP/1.1 301 Moved Permanently");
-        header("Location: " . $address_site . "../lang/nl/admin/admin_selection.php");
+        header("Location: " . $address_site . "../lang/nl/admin/admin_recrutement.php");
 
         //Останавливаем  скрипт
         exit();

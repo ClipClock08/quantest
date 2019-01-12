@@ -1,85 +1,99 @@
 <?php
-require_once ("../dbconnect.php");
- 
- //for profile name + surname
-    $email = $_SESSION['email'];
-    $id = $_SESSION['id'];
-    $result = $mysqli->query("SELECT * FROM users WHERE `id`= $id AND `email`= '" . $email . "'");
-    if ($result) {
-        $rows = mysqli_num_rows($result); // количество полученных строк
-
-        for ($i = 0; $i < $rows; ++$i) {
-            $row = mysqli_fetch_row($result);
-                $name = $row[4];
-                $surName = $row[5];
-        }
-        // clear the result
-        mysqli_free_result($result);
-    }
-
+require("C:\OSPanel\domains\quantest.loc/dbconnect.php");
+/*echo "<pre>";
+print_r($_SESSION);
+echo "</pre>";*/
 ?>
 <!DOCTYPE html>
-<html>
-    <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8" />
+<html lang="eu">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
     <title>QUANTEST Admin</title>
-    <link rel="stylesheet" href="../css/quantest.css" />
+    <link rel="stylesheet" href="../css/quantest.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="../../js/script.js"></script>
-	<meta name="robots" content="noarchive">
-	<meta name="robots" content="noindex">
-	<meta name="robots" content="nofollow">
-	<style>
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 25px;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: green;
-}
-</style> 
+    <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+    <script src="../js/script.js"></script>
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <!-- FONT AWESOME STYLE  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet"/>
+    <!-- CUSTOM STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
 </head>
-<div id="bloc_page">
-			<div id="bloc_page">
-				<header>
-                  
-                       
-                          <h2>   <a href="https://quantest.online/indexFR.php"><img src="../img/logoQuantestPlat.jpg" alt="Logo Quantest" /></a>
-                    
-					  <b>ADMINISTRATION</b></h2>    
-                       
-                    
-                   
-                
-                <nav>
-                    <ul>
-                       <li><a href="admin_selection.php">admin-Recrutement</a></li>
-                        <li><a href="admin_reconversion.php">admin-Reconversion</a></li>
-                         <?php
-                            //Check if user is authorized
-                            if(!isset($_SESSION['email']) && !isset($_SESSION['password'])){
-                                // if not, then display the block with links to the registration and authorization page
-                                ?>
-									<li><a href="admin_auth.php">Log in</a></li>
-                                <?php
-                            }else{
-                                //If the user is authorized, then display the link Logout
-                                ?>
-                                    <li><a href="logout.php">Log out</a></li>
-                                    <li><?php echo $name ." ". $surName;?></li>
-                                <?php
-                            }
-                        ?>
+
+<body>
+<div class="navbar navbar-inverse set-radius-zero">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="admin.php">
+                <img src="../img/logoQuantestPlat.jpg" alt="Logo Quantest" height="70px"/>
+            </a>
+        </div>
+
+        <div class="right-div">
+            <?php
+            //Check if the user is authorized
+            if (!isset($_SESSION['email_admin']) && !isset($_SESSION['password_admin'])) {
+                // if not, then display the block with links to the registration and authorization page
+                ?>
+                <a href="admin_auth.php">Log in</a>
+                <?php
+            } else {
+                //If the user is authorized, then display the link Logout
+                ?>
+                <?php echo "Hello " . $_SESSION['email_admin'] . "!"; ?> <br><a href="logout.php"
+                                                                                class="btn btn-danger pull-right">LOG ME
+                    OUT</a>
+                <?php
+            }
+            ?>
+        </div>
+    </div>
+</div>
+<!-- LOGO HEADER END-->
+<section class="menu-section">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="navbar-collapse collapse ">
+                    <ul id="menu-top" class="nav navbar-nav navbar-right">
+                        <li><a href="client_orders.php" class="menu-top-active">Clients orders</a></li>
+
+                        <li><a href="client_list.php">Clients</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown">ADMIN FORMS <i
+                                        class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="#">Recrutement</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="admin_reconversion.php">Reconversion</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="https://quantest.online/admin/test_result.php">result selection</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="https://quantest.online/admin/test_result_Selection.php">result reconversion</a>
+                                </li>
+                                <li role="presentation">
+                                    <a role="menuitem" tabindex="-1" href="https://quantest.online/admin/getPoints.php">get points</a>
+                                </li>
+                            </ul>
+                        </li>
+
                     </ul>
-                </nav>
-            </header>
-	        </div> 
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

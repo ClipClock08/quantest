@@ -84,7 +84,7 @@ if ($path == "/" || $path == "/index.php") {
         } else {
             //If the user is authorized, then output the link Logout
             ?><a href="<?php echo $address_site; ?>lang/en/view/profile.php">Hello! <img
-                    src="../img/profile.png">
+                    src="<?php echo $address_site; ?>img/profile.png">
             <b><?php echo $_SESSION['name'] . " " . $_SESSION['surname']; ?></b></a> | <a
                     href="<?php echo $address_site; ?>lang/en/view/auth/logout.php">Log out</a>
 

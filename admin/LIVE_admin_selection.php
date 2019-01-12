@@ -59,7 +59,7 @@ if (isset($_SESSION["email"]) && !empty($_SESSION["password"])) {
 
 <div align="center">
 			<h2>Admin of hiring selection tests</h2>
-			<form name="adminClients" action="selection_db.php" method="post">
+			<form name="adminClients" action="recrutement_db.php" method="post">
 				<fieldset>
 					<legend>Encoding the values of a job selection test </legend>
 					<label for="nomPoste">
